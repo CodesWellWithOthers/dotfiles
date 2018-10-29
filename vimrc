@@ -182,8 +182,6 @@ nnoremap gp `[v`]|             " visual select newest pasted text
 map ´ :vsp <CR>:exec("tag ".expand("<cword>"))<CR>zt|
 " map † :exec("tag ".expand("<cword>"))<CR>zt| 		" vsp ctag def <A-]>
 "------------------------------------------------------------------- TEMPLATES
-au FileType {c,python,sh} nnoremap <silent><leader>t :call TemplateCode()<CR>|
-au FileType {c,python,sh} nnoremap <silent><leader>d :call DebugMsg()<CR>|
 ".................................................................... COMMENTS
 au FileType {c,cpp,make,markdown,python,sh,text,tmux,vim}
 	    \ nnoremap <silent><leader>c :call Comment()<CR>|
